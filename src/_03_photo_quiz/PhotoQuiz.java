@@ -26,9 +26,9 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-
+		String squids = "https://i.etsystatic.com/16003111/r/il/5d4c8b/1492760544/il_794xN.1492760544_r8z5.jpg";
 		// 2. create a variable of type "Component" that will hold your image
-
+		
 		// 3. use the "createImage()" method below to initialize your Component
 
 		// 4. add the image to the quiz window
