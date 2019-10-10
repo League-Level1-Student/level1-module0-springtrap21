@@ -14,7 +14,7 @@ public class houses {
 		MakeHouse("small" , Color.PINK);
 		MakeHouse("large" , Color.blue);
 		MakeHouse("medium" , Color.PINK);
-		MakeHouse("small" , Color.red);
+		MakeHouse("small" , Color.blue);
 		MakeHouse("large" , Color.PINK);
 		MakeHouse("small" , Color.red);
 		MakeHouse("medium" , Color.	blue);
@@ -36,17 +36,31 @@ public class houses {
 		rob.setPenColor(boi);
 		rob.penDown();
 		rob.setSpeed(50);
+		rob.setPenWidth(5);
 		rob.move(height);
-		rob.turn(45);
-		rob.move(30);
-		rob.turn(90);
-		rob.move(30);
-		rob.turn(45);
+		if (height <= 120) {
+			PointyRoof();
+		}
+		else {
+			FlatRoof();
+		}
 		rob.move(height);
 		rob.turn(-90);
 		rob.setPenColor(Color.green);
 		rob.move(25);
 		rob.turn(-90);
 		rob.setPenColor(Color.black);
+	}
+	public static void PointyRoof() {
+		rob.turn(45);
+		rob.move(30);
+		rob.turn(90);
+		rob.move(30);
+		rob.turn(45);
+	}
+	public static void FlatRoof() {
+		rob.turn(90);
+		rob.move(50);
+		rob.turn(90);
 	}
 }

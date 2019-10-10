@@ -26,19 +26,19 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-		String squids = "https://i.etsystatic.com/16003111/r/il/5d4c8b/1492760544/il_794xN.1492760544_r8z5.jpg";
+		String squids = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvylNTR0Ox8-poEzDqV56THAUekZPmGfxPXKNI3qKd9VFFtCBLYw";
 		// 2. create a variable of type "Component" that will hold your image
-		
+		 Component image = createImage(squids);
 		// 3. use the "createImage()" method below to initialize your Component
-
+		 
 		// 4. add the image to the quiz window
-
+		 quizWindow.add(image);
 		// 5. call the pack() method on the quiz window
-
+		 quizWindow.pack();
 		// 6. ask a question that relates to the image
-
+		 String fish = JOptionPane.showInputDialog("What is the Image");
 		// 7. print "CORRECT" if the user gave the right answer
-
+		 
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
