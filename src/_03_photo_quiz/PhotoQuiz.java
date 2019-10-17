@@ -26,7 +26,7 @@ public class PhotoQuiz {
 		// 1. find an image on the internet, and put its URL in a String
 		// variable (from your browser, right click on the image, and select
 		// “Copy Image Address”)
-		String squids = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvylNTR0Ox8-poEzDqV56THAUekZPmGfxPXKNI3qKd9VFFtCBLYw";
+		String squids = "https://pics.me.me/hi-sisters-hi-sisters-meme-when-you-hear-james-charles-54065304.png";
 		// 2. create a variable of type "Component" that will hold your image
 		 Component image = createImage(squids);
 		// 3. use the "createImage()" method below to initialize your Component
@@ -38,23 +38,34 @@ public class PhotoQuiz {
 		// 6. ask a question that relates to the image
 		 String fish = JOptionPane.showInputDialog("What is the Image");
 		// 7. print "CORRECT" if the user gave the right answer
-		 
+		 if (fish.equals("scary james charles")) {
+			JOptionPane.showMessageDialog(null, "Correct");
+		}
+		 else {
+			JOptionPane.showMessageDialog(null, "Incorrect, it's scary james charles");
+		}
 		// 8. print "INCORRECT" if the answer is wrong
 
 		// 9. remove the component from the quiz window (you may not see the
 		// effect of this until step 12)
-
+		 quizWindow.remove(image);
 		// 10. find another image and create it (might take more than one line
 		// of code)
-
+		 String Obama = "https://simmonsopinions.files.wordpress.com/2015/06/fat-guy.jpg";
 		// 11. add the second image to the quiz window
-
+		 Component image2 = createImage(Obama);
+		 quizWindow.add(image2);
 		// 12. pack the quiz window
-
+		 quizWindow.pack();
 		// 13. ask another question
-
+		 String boi = JOptionPane.showInputDialog("Guess the second image");
 		// 14+ check answer, say if correct or incorrect, etc.
-
+		 if (boi.equals("fat guy eating big mac")) {
+			JOptionPane.showMessageDialog(null,"Correct");
+		}
+		 else {
+			 JOptionPane.showMessageDialog(null,"Incorrect, it was fat guy eating big mac	");
+		}
 	}
 
 	private Component createImage(String imageUrl) throws MalformedURLException {
